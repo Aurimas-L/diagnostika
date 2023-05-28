@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".automobiliuValdymas.MasinaInformacijaFragment">
+
+    <TextView
+        android:id="@+id/textMasinosInformacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Automobilio informacija"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaPavadinimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Pavadinimas:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacija" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaModelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Modelis:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaGamintojas" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaVariklioTuris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Variklio tūris:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaModelis" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaGalia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Galia:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaVariklioTuris" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaVinKodas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Vin numeris:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaGalia" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaGamintojas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Gamintojas:"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaPavadinimas" />
+
+    <TextView
+        android:id="@+id/textMasinosInformacijaIstorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Gedimų istorija:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@id/textMasinosInformacijaVinKodas" />
+
+    <ScrollView
+        android:id="@+id/scrollViewIstorija"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toBottomOf="@+id/textMasinosInformacijaIstorija"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAutomobilisIstorijaTurinys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textIssaugotosAtaskaitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Išsaugotos ataskaitos:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/textMasinosInformacija"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewIstorija" />
+
+    <ScrollView
+        android:id="@+id/scrollViewAtaskaitos"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toBottomOf="@+id/textIssaugotosAtaskaitos"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAutomobilisAtaskaitosTurinys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonRedaguotiInformacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Redaguoti Informaciją"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPasalintiAutomobili"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPasalintiAutomobili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Pašalinti automobilį"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

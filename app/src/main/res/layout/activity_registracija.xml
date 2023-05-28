@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paskyrosValdymas.Registracija">
+
+    <TextView
+        android:id="@+id/textSukurtiNaujaPaskyra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Sukurti naują paskyrą" />
+
+    <EditText
+        android:id="@+id/registracijaVardas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSukurtiNaujaPaskyra"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Vardas"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/registracijaPrisijungimas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registracijaVardas"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Prisijungimas"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/registracijaEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registracijaPrisijungimas"
+        android:layout_marginTop="1dp"
+        android:hint="Elektroninio pašto adresas"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/registracijaSlaptazodis"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registracijaEmail"
+        android:layout_marginTop="3dp"
+        android:hint="Slaptažodis"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ProgressBar
+        android:id="@+id/registracijaProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/registracijaSlaptazodis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonRegistracija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registracijaProgressBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="30dp"
+        android:onClick="openRegistracija"
+        android:text="Registruotis" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".automobiliuValdymas.MasinaPridetiFragment">
+
+    <TextView
+        android:id="@+id/textRedaguotiMasina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Redaguoti informaciją"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRedaguotiMasinaPavadinimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Pavadinimas"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRedaguotiMasina" />
+
+    <Spinner
+        android:id="@+id/spinnerRedaguotiMasinaGaminotojas"
+        android:layout_width="291dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedaguotiMasinaPavadinimas" />
+
+    <EditText
+        android:id="@+id/editTextRedaguotiMasinaModelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Automobilio modelis"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRedaguotiMasinaPavadinimas"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRedaguotiMasinaGaminotojas" />
+
+    <EditText
+        android:id="@+id/editTextRedaguotiMasinaVariklis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Variklio tūris"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRedaguotiMasinaPavadinimas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedaguotiMasinaModelis" />
+
+    <EditText
+        android:id="@+id/editTextRedaguotiMasinaGalia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="galia"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRedaguotiMasinaPavadinimas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedaguotiMasinaVariklis" />
+
+    <EditText
+        android:id="@+id/editTextRedaguotiMasinaVinKodas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Vin kodas"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRedaguotiMasinaPavadinimas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedaguotiMasinaGalia" />
+
+    <Button
+        android:id="@+id/buttonRedaguotiMasina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patvirtinti"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedaguotiMasinaVinKodas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

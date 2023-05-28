@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paskyrosValdymas.Prisijungimas">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prisijungimasPrisijungimas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Prisijungimas" />
+
+
+    <EditText
+        android:id="@+id/prisijungimasPrisijungimas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Prisijungimo vardas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/prisijungimasSlaptazodis"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/prisijungimasSlaptazodis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="slaptažodis"
+        android:inputType="textPassword" />
+
+    <ProgressBar
+        android:id="@+id/prisijungimasProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/prisijungimasSlaptazodis"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_margin="5dp" />
+
+
+    <Button
+        android:id="@+id/mygtukasPrisijungti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prisijungimasProgressBar"
+        android:layout_centerHorizontal="true"
+        android:text="Prisijungti" />
+
+
+    <Button
+        android:id="@+id/buttonRegistruotis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mygtukasPrisijungti"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="openRegistracija"
+        android:layout_marginTop="0dp"
+        android:text="Registruotis" />
+
+
+
+</RelativeLayout>
